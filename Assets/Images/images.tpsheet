@@ -1,0 +1,43 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:33b2255b8f2aecd6e89f6c7f39220208:ab9e095fbb1c7f6930ce47daf57092ed:04c934aac445840332d84738abd675b8$
+#
+:format=40300
+:texture=images.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+block_bg;1365;1176;116;116; 0.5;0.5; 0;0;0;0
+block_red;1488;1210;80;82; 0.5;0.5; 0;0;0;0
+btn_music_off;1028;1570;200;200; 0.5;0.5; 0;0;0;0
+btn_music_on;1028;1363;200;200; 0.5;0.5; 0;0;0;0
+btn_pause;21;81;200;200; 0.5;0.5; 0;0;0;0
+btn_play;228;81;200;200; 0.5;0.5; 0;0;0;0
+btn_replay;328;406;200;200; 0.5;0.5; 0;0;0;0
+btn_review;435;199;200;200; 0.5;0.5; 0;0;0;0
+btn_sound_off;535;406;200;200; 0.5;0.5; 0;0;0;0
+btn_sound_on;642;199;200;200; 0.5;0.5; 0;0;0;0
+chain;1865;1777;150;250; 0.5;0.5; 0;0;0;0
+cool;1815;1708;202;62; 0.5;0.5; 0;0;0;0
+excellent;1815;1621;201;32; 0.5;0.5; 0;0;0;0
+game_over_bg;1028;783;999;338; 0.5;0.5; 0;0;0;0
+glow;742;427;300;179; 0.5;0.5; 0;0;0;0
+hand;1235;1697;64;73; 0.5;0.5; 0;0;0;0
+hud_bottom_bg;21;613;1000;350; 0.5;0.5; 0;0;0;0
+loader_bg;1308;1942;550;85; 0.5;0.5; 0;0;0;0
+loader_fg;1308;1865;540;70; 0.5;0.5; 0;0;0;0
+logo;1308;1299;500;559; 0.5;0.5; 0;0;0;0
+new_score;21;288;300;318; 0.5;0.5; 0;0;0;0
+perfect;1815;1660;201;41; 0.5;0.5; 0;0;0;0
+popup_bg;21;970;1000;800; 0.5;0.5; 0;0;0;0
+rays;1815;1341;200;273; 0.5;0.5; 0;0;0;0
+star;1815;1128;200;206; 0.5;0.5; 0;0;0;0
+top_hud_bg;21;1777;1280;250; 0.5;0.5; 0;0;0;0
+top_hud_score_inset;1028;1172;330;120; 0.5;0.5; 0;0;0;0
+underlay_white;1235;1626;64;64; 0.5;0.5; 0;0;0;0
