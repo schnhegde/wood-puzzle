@@ -62,7 +62,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &9999993
 LightmapSettings:
@@ -375,9 +375,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interstitial_ID_Android: ca-app-pub-2853844821432281/4573050423
-  Interstitial_ID_iOS: ca-app-pub-3940256099942544/4411468910
+  Interstitial_ID_iOS: ca-app-pub-2853844821432281/3262610824
   Banner_ID_Android: ca-app-pub-2853844821432281/4639610985
-  Banner_ID_iOS: ca-app-pub-3940256099942544/2934735716
+  Banner_ID_iOS: ca-app-pub-2853844821432281/9828019178
   enableAds: 1
 --- !u!4 &2050602881
 Transform:

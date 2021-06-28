@@ -31,10 +31,14 @@ public class AdsControl : MonoBehaviour
         }
 
         _instance = this;
+        List<string> testIds = new List<string>();
+        testIds.Add("98eb6b70943ae1ca1a06b43e4191650c");
         RequestConfiguration requestConfiguration = new RequestConfiguration.Builder()
+        .SetTestDeviceIds(testIds)
         .SetTagForChildDirectedTreatment(TagForChildDirectedTreatment.True)
         .build();
         MobileAds.SetRequestConfiguration(requestConfiguration);
+        MobileAds.Initialize(initStatus => { });
         MakeNewInterstial();
         RequestBanner();
         ShowBanner();
