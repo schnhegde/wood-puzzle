@@ -110,6 +110,8 @@ public class InGameScript : MonoBehaviour
 
 	public Text scoreTxt;
 
+	public Text multiplierTxt;
+
 	public Text bestTxt;
 
 	public int scoreInt;
@@ -140,6 +142,7 @@ public class InGameScript : MonoBehaviour
 		this.lastBest = this.bestInt;
 		this.bestTxt.text = this.bestInt.ToString();
 		this.scoreInt = 0;
+		//resetScoreMultiplier();
 		this.isOverBest = false;
 	}
 
@@ -173,6 +176,18 @@ public class InGameScript : MonoBehaviour
 	{
 		int value = scoreFillLine + numberUnit;
 		this.UpScoreTxt(value);
+	}
+
+	public void setNewMulitplier(int multiplier)
+    {
+		string multTxt = "x" + multiplier;
+		multiplierTxt.text = multTxt;
+		multiplierTxt.GetComponent<Animator>().Play("ani_combo");
+	}
+
+	public void resetMultiplier()
+	{
+		multiplierTxt.GetComponent<Animator>().Play("ani_combo_collapse");
 	}
 
 	public void SetScoreContinue(int value)

@@ -281,6 +281,8 @@ public class ScoreCtr : MonoBehaviour
 
 	public Sprite perfect;
 
+	private int comboMultiplier;
+
 	public float minGood;
 
 	public float maxGood;
@@ -323,6 +325,28 @@ public class ScoreCtr : MonoBehaviour
 			this.listText.RemoveAt(this.listText.Count - 1);
 		}
 		return result;
+	}
+
+	public int getScoreMultiplier()
+    {
+		return comboMultiplier;
+    }
+
+	public void resetScoreMultiplier()
+    {
+		comboMultiplier = 0;
+		MainCanvas.Main.inGameScript.resetMultiplier();
+	}
+
+	public void incrementScoreMultiplier()
+    {
+
+		comboMultiplier += 2;
+		if (comboMultiplier > 10)
+        {
+			comboMultiplier = 10;
+        }
+		MainCanvas.Main.inGameScript.setNewMulitplier(comboMultiplier);
 	}
 
 	public void SetText(ScoreCtr.ScoreData text)

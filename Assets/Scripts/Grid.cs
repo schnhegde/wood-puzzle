@@ -630,6 +630,7 @@ public class Grid : MonoBehaviour
 		int num = 0;
 		List<Vector2> list = new List<Vector2>();
 		List<int> list2 = new List<int>();
+		bool isSomethingCleared = false;
 		for (int i = 0; i < this.numberCol; i++)
 		{
 			if (this.isColFull(i, newCubeUnit))
@@ -651,6 +652,7 @@ public class Grid : MonoBehaviour
 				}
 				this.deleteCol(i, timeWait);
 				list2.Add(i);
+				isSomethingCleared = true;
 			}
 		}
 		for (int l = 0; l < this.numberRow; l++)
@@ -673,9 +675,19 @@ public class Grid : MonoBehaviour
 					}
 				}
 				this.deleteRow(l, timeWait);
+				isSomethingCleared = true;
 			}
 		}
+		if (isSomethingCleared)
+        {
+			MainObjControl.Instant.scoreCtr.incrementScoreMultiplier();
+		} else
+        {
+			MainObjControl.Instant.scoreCtr.resetScoreMultiplier();
+		}
 		int score = GameDefine.GetScore(num);
+		int multiplier = MainObjControl.Instant.scoreCtr.getScoreMultiplier();
+		score = score * multiplier;
 		if (score > 0)
 		{
 			isCollect = true;
